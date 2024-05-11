@@ -1,6 +1,6 @@
 #ifndef CRITERION_PLAYGROUND_LIBRARY_H
 #define CRITERION_PLAYGROUND_LIBRARY_H
 
-void hello();
+int add_me_plz(int a, int b);
 
 #endif //CRITERION_PLAYGROUND_LIBRARY_H

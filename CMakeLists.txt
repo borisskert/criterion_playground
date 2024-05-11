@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.28)
 project(criterion_playground)
 
-set(CMAKE_CXX_STANDARD 26)
+set(CMAKE_CXX_STANDARD 11)
 
-add_library(criterion_playground STATIC library.cpp)
+set(MODULE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/.cmake/Modules")
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${MODULE_DIR})
+
+add_subdirectory(src)
+add_subdirectory(tests)
